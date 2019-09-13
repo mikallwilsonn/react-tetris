@@ -2,18 +2,23 @@
 // Dependencies
 import React from 'react';
 
+import { StyledCell } from './styles/StyledCell';
+import { TETROMINOS } from '../tetrominos';
+
 
 // ----
 // Cell Component
 const Cell = ({ type }) => {
     return (
-        <div>
-            Cell: {type}
-        </div>
+        <StyledCell 
+            type={type} 
+            color={TETROMINOS[type].color} 
+        >
+        </StyledCell>
     );
 }
 
 
 // ----
 // Export Cell Component
-export default Cell;
+export default React.memo( Cell );

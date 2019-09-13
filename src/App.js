@@ -14,7 +14,7 @@ import Tetris from './components/Tetris';
 const App = () => {
   return (
     <div className="App">
-      <p>App</p>
+      <Tetris />
     </div>
   );
 }

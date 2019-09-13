@@ -4,12 +4,16 @@ import React from 'react';
 
 
 // ----
+// Child Component
+import { StyledDisplay } from './styles/StyledDisplay';
+
+// ----
 // Display Component
 const Display = ({ gameOver, text }) => {
     return (
-        <div>
+        <StyledDisplay gameOver={gameOver}>
             {text}
-        </div>
+        </StyledDisplay>
     );
 }
 
