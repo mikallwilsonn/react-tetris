@@ -5,16 +5,16 @@ import React from 'react';
 
 // ----
 // Child Components
-
+import { StyledStartButton } from './styles/StyledStartButton';
 
 
 // ----
 // StartButton Component
 const StartButton = ({ callback }) => {
     return (
-        <div>
+        <StyledStartButton onClick={callback}>
             Start Game
-        </div>
+        </StyledStartButton>
     );
 }
 
